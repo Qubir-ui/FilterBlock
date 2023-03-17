@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Верстка блока с фильтром</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <p class="main-text">Bring it all together</p>
+        <p class="descriprion">The fastest way to combine your favorite tools and APIs to build the fastest sites, stores, and apps for the web.</p>
+        <form action="#" class="filter">
+            <div class="choice">
+                <div class="wrapper-new">
+                    <input id="new" type="checkbox">
+                    <label for="new" tabindex="1">новинки 2023</label>
+                </div>
+                <div class="wrapper-availability">
+                    <input id="availability" type="checkbox">
+                    <label for="availability" tabindex="2">в наличии</label>
+                </div>
+                <button class="clear visual-hidden" type="reset">сбросить</button>
+            </div>
+            <input name="search" id="search" type="text" placeholder="Поиск по ключевым словам ..." tabindex="2">
+            <label class="visual-hidden" for="search">Поиск</label>
+            <div class="options">
+                <div class="color-wrapper" tabindex="3">
+                    <span class="color-wrapper-text"></span>
+                    <div id="color-options" class="visual-hidden">
+                        <ul class="color-options-list">
+                        </ul>
+                    </div>
+                    <select name="color" id="color" class="visual-hidden">
+                        <option class="option" value="color">Цвет</option>
+                        <option class="option" value="blue">Синий</option>
+                        <option class="option" value="violet">Фиолетовый</option>
+                        <option class="option" value="pages">Страницы истории</option>
+                        <option class="option" value="rub3">Рубрика 3</option>
+                        <option class="option" value="rub4">Рубрика 4</option>
+                    </select>
+                </div>
+                <div class="size-wrapper" tabindex="4">
+                    <span class="size-wrapper-text"></span>
+                    <div id="size-options" class="visual-hidden">
+                        <ul class="size-options-list">
+                        </ul>
+                    </div>
+                    <select name="size" id="size" class="visual-hidden">
+                        <option class="option" value="size">Размер</option>
+                        <option class="option" value="s32">32</option>
+                        <option class="option" value="s34">34</option>
+                        <option class="option" value="s36">36</option>
+                        <option class="option" value="s38">38</option>
+                        <option class="option" value="s40">40</option>
+                    </select>
+                </div>
+                <button class="submit" type="submit" tabindex="5">Применить фильтр</button>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
